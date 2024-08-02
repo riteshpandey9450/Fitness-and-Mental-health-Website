@@ -1,0 +1,299 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+
+}
+
+html,body{
+    height: 100vh;
+    width: 100vw;
+    overflow-x: none;
+}
+
+
+#page1{
+    width: 100vw;
+    min-height: 100vh;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    height: 12vh;
+    width: 100vw;
+    color: aliceblue;
+    background-color: rgba(0, 0, 0, 0.747);
+}
+nav h1{
+    margin-left: 20px;
+    font-size: 10vh;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#nav-right {
+    display: flex;
+    color: aliceblue;
+    font-size: 30px;
+    gap: 30px;
+    margin-right: 4vw;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#nav-right a{
+    margin-top: 4vh;
+    text-decoration: none;
+    color: beige;
+}
+#nav-right a:hover{
+    color: lightblue;
+}
+#sinup{
+    width: 7vw;
+    height: 6vh;
+    margin-top: 3.5vh;
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+    border: 1px solid black;
+    background-color: rgba(95, 201, 19, 0.9);
+}
+#page1-center{
+    width: 100vw;
+    height: 100vh;
+    padding-top: 10%;
+    padding-left: 10%;
+
+   background-color: #E5EBF7;
+}
+#fitness-card,#psycology-card{
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+}
+.inner-card{
+    height: 65vh;
+    width: 20vw;
+    border-radius: 30px;
+    background-color: rgba(185, 160, 115, 0.808);
+}
+.inner-card img{
+    width: 20vw;
+    height: 30vh;
+    padding: 10px;
+    border-radius: 20px;
+}
+.inner-card p{
+    font-size: 20px;
+     padding-left: 5px;
+    padding-top: 5px; 
+
+}
+.behealthy,.learn-psychology{
+    width: 17vw;
+    height: 7vh;
+    color: rgb(224, 237, 220);
+    font-size: 30px;
+    margin-top: 8px;
+    margin-left: 1vw;
+    
+    border-radius: 20px;
+
+    background-color: rgb(86, 202, 106);
+    border-radius: 20px;
+}
+.behealthy a,.learn-psychology a{
+    text-decoration: none;
+    color: rgba(240, 248, 255, 0.742);
+}
+
+
+
+#page2{
+    width: 100vw;
+    height: 70vh ;
+   background-color: #E5EBF7;
+}
+#psycology-card{
+    margin-left: 10vw;
+}
+
+button{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#page3{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    background-color: #E5EBF7;
+
+}
+
+#heroshape{
+    width: 26vw;
+    height: 40vw;
+    margin-top: 180vh;
+    background-color: #811759;
+    position: absolute;
+    background-image: url("page1_images/gif_image.png");
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    left: 10%;
+    top: 25vh;
+    filter: blur(15px);
+}
+#hero1{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    filter: blur(10px);
+    background-color: #811759;
+
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+#hero2{
+    width: 30vw;
+    height: 30vh;
+    position: absolute;
+    filter: blur(10px);
+    background-color: #811759;
+    border-radius: 50% ;
+    animation-name: anime2;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    border-radius: 50% ;
+}
+#hero3{
+    width: 30vw;
+    height: 30vw;
+    position: absolute;
+    filter: blur(15px);
+    background-color:  #811759;
+    animation-name: anime1;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    border-radius: 50% ;
+    border: 5px solid #811759;
+}
+
+@keyframes anime1 {
+    from{
+        transform: translate(15%,-3%);
+    }
+    to{
+        transform: translate(0,-10%);
+    }
+}
+
+@keyframes anime2 {
+    from{
+        transform: translate(5%,-5%);
+    }  
+    to{
+        transform: translate(-15%,20%);
+
+    }
+    
+} 
+
+
+.contact {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #E5EBF7;
+  }
+
+  .contact-card {
+    max-width: 400px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+
+  .contact-card-header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .contact-card-body {
+    padding: 20px;
+  }
+
+  .contact-card-body input[type="text"],
+  .contact-card-body input[type="email"],
+  .contact-card-body input[type="tel"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+
+  .contact-card-body input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+  }
+
+  .contact-card-body input[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+
+  #message {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+   
+    bottom: 0;
+    width: 100%;
+}
+footer p {
+    margin: 0;
+}
+.social-icons {
+    list-style: none;
+    padding: 0;
+}
+.social-icons li {
+    display: inline-block;
+    margin-right: 10px;
+}
+.social-icons a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+
+
