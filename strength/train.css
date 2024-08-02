@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(Images/exercise.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    padding: 25px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.heading h1{
+    font-size: 100px;
+    color: white;
+}
+.heading{
+    backdrop-filter: blur(20px);
+    height: 100px;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    border-radius: 15px;
+}
+.cards{
+    display: flex;
+    flex-direction: column;
+
+}
+.cards img{
+    height: 60vh;
+    border-radius: 30px;
+    transition: all 0.4s;
+    margin: 5px;
+}
+.cards img:hover{
+    transform: scale(1.02);
+}
+
+@media (max-width: 786px) {
+
+.container {
+    padding: 25px; 
+    gap: 20px;
+}
+.heading h1{
+    font-size: 60px;
+}
+.heading{
+    height: 80px;
+    width: 300px;
+}
+.cards img{
+    height: 25vh;
+    border-radius: 30px;
+    margin: 5px;
+}
+.cards img:hover{
+    transform: scale(1);
+}
+}

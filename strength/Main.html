@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main page</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Protest+Strike&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#icon').click(function () {
+                $('ul').toggleClass('show');
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <section class="navigationBar">
+        <div class="navigation container">
+            <div class="logoContaine+r">
+                <img src="Images/Logo.png" alt="LOGO" width="50px" height="50px">
+                <p class="navText">StrengthSphere</p>
+            </div>
+            <div class="navLinks">
+                <ul>
+                    <li><a href="#home" id="first">Home</a></li>
+                    <li><a href="#train">Train</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#develoer">Developer</a></li>
+                </ul>
+            </div>
+            <div class="navIcon">
+                <label id="icon">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+            </div>
+        </div>
+    </section>
+    <section class="front" id="herobcg">
+        
+        <a href="#maincont">
+            <div class="start">
+                EXPLORE
+            </div>
+        </a>
+    </section>
+    <section id="maincont">
+
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                
+                <div class="numbertext">1 / 6</div>
+                <a href="train.html"><img id="imagesss" src="Images/Train.png" style="width: 100%" /></a>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 6</div>
+                <a href="bmi.html"><img id="imagesss" src="Images/BMI.png" style="width: 100%" /></a>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 6</div>
+                <a href="calorie.html"><img id="imagesss" src="Images/CALORIE.png" style="width: 100%" /></a>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 6</div>
+                <a href="quiz.html"><img id="imagesss" src="Images/Quiz.png" style="width: 100%" /></a>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">5 / 6</div>
+                <a href="shopping.html"><img id="imagesss" src="Images/Requirement.png" style="width: 100%" /></a>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">6 / 6</div>
+                <img id="imagesss" src="Images/75 days.png" style="width: 100%" />
+            </div>
+
+
+            <a class="prev slider" onclick="showSlides(-1)">❮</a>
+            <a class="next slider" onclick="showSlides(1)">❯</a>
+
+    </section>
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.waves.min.js"></script>
+    <script>
+        VANTA.WAVES({
+            el: "#herobcg",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            color: 0x171e22
+        })
+    </script>
+    <script>
+        let slideIndex = 1;
+        const slides = document.getElementsByClassName("mySlides");
+
+        function showSlides(n) {
+            let a = slideIndex + n;
+            if (a > slides.length) {
+                slideIndex = 1;
+            } else if (a < 1) {
+                slideIndex = slides.length;
+            } else {
+                slideIndex = a;
+            }
+
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slides[slideIndex - 1].style.display = "block";
+        }
+
+        showSlides(0);
+    </script>
+
+</body>
+
+</html>
